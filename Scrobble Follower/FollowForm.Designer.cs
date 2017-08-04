@@ -1,6 +1,6 @@
 ﻿namespace Scrobble_Follower
 {
-  partial class Form1
+  partial class FollowForm
   {
     /// <summary>
     /// Required designer variable.
@@ -28,7 +28,7 @@
     /// </summary>
     private void InitializeComponent()
     {
-      System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+      System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FollowForm));
       this.textBox1 = new System.Windows.Forms.TextBox();
       this.track4 = new Scrobble_Follower.Track();
       this.track3 = new Scrobble_Follower.Track();
