@@ -14,6 +14,7 @@ namespace Scrobble_Follower
 
     private void Form1_Load(object sender, EventArgs e)
     {
+      userTextBox.Text = Config.DefaultUser;
       var timer = new Timer { Interval = 5000};
       timer.Tick += Tick;
       timer.Start();
@@ -49,7 +50,7 @@ namespace Scrobble_Follower
         .LoadImage(imageUrl));
     }
 
-    private string User => textBox1.Text;
+    private string User => userTextBox.Text;
 
     private void textBox1_TextChanged(object sender, EventArgs e)
     {
