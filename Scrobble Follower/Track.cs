@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Drawing;
-using System.IO;
-using System.Net;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Scrobble_Follower
@@ -44,7 +41,7 @@ namespace Scrobble_Follower
     {
       SpinWait.SpinUntil(() => trackInfo.Image != null, 50000);
 
-      pictureBox1.BackgroundImage = new Bitmap(trackInfo.Image);
+      pictureBox.BackgroundImage = new Bitmap(trackInfo.Image);
     }
   }
 }

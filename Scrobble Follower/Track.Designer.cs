@@ -28,7 +28,7 @@
     /// </summary>
     private void InitializeComponent()
     {
-      this.pictureBox1 = new System.Windows.Forms.PictureBox();
+      this.pictureBox = new System.Windows.Forms.PictureBox();
       this.label1 = new System.Windows.Forms.Label();
       this.label2 = new System.Windows.Forms.Label();
       this.label3 = new System.Windows.Forms.Label();
@@ -36,16 +36,17 @@
       this.artistLabel = new System.Windows.Forms.Label();
       this.trackLabel = new System.Windows.Forms.Label();
       this.timeLabel = new System.Windows.Forms.Label();
-      ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
       this.SuspendLayout();
       // 
-      // pictureBox1
+      // pictureBox
       // 
-      this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-      this.pictureBox1.Name = "pictureBox1";
-      this.pictureBox1.Size = new System.Drawing.Size(100, 92);
-      this.pictureBox1.TabIndex = 0;
-      this.pictureBox1.TabStop = false;
+      this.pictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+      this.pictureBox.Location = new System.Drawing.Point(0, 0);
+      this.pictureBox.Name = "pictureBox";
+      this.pictureBox.Size = new System.Drawing.Size(100, 92);
+      this.pictureBox.TabIndex = 0;
+      this.pictureBox.TabStop = false;
       // 
       // label1
       // 
@@ -128,10 +129,10 @@
       this.Controls.Add(this.label3);
       this.Controls.Add(this.label2);
       this.Controls.Add(this.label1);
-      this.Controls.Add(this.pictureBox1);
+      this.Controls.Add(this.pictureBox);
       this.Name = "Track";
       this.Size = new System.Drawing.Size(360, 100);
-      ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
       this.ResumeLayout(false);
       this.PerformLayout();
 
@@ -139,7 +140,7 @@
 
     #endregion
 
-    private System.Windows.Forms.PictureBox pictureBox1;
+    private System.Windows.Forms.PictureBox pictureBox;
     private System.Windows.Forms.Label label1;
     private System.Windows.Forms.Label label2;
     private System.Windows.Forms.Label label3;

@@ -8,12 +8,13 @@ namespace Scrobble_Follower
 {
   public static class ImageRepository
   {
-    private static readonly Dictionary<string, Image> _images = new Dictionary<string, Image>(); 
+    private static readonly Dictionary<string, Image> Images = new Dictionary<string, Image>(); 
+
     public static void ImageForUrl(string url, Action<Image> callback)
     {
-      if (_images.ContainsKey(url))
+      if (Images.ContainsKey(url))
       {
-        callback(_images[url]);
+        callback(Images[url]);
         return;
       }
 
@@ -27,7 +28,7 @@ namespace Scrobble_Follower
     private static void SetImage(byte[] data, string url, Action<Image> callback)
     {
       var image = ImageFromStream(data);
-      if (!_images.ContainsKey(url)) _images.Add(url, image);
+      if (!Images.ContainsKey(url)) Images.Add(url, image);
       callback(image);
     }
 
